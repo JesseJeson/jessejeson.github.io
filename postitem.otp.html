@@ -1,14 +1,9 @@
 {(PostItem)}
-<h2>
-  <a href='{[postitemlink]}' class='itemlink'>{[postitemtitle]}</a></h2>
-<p>
-</p>
-<ifcover><img src='{[postcover]}'></img></ifcover>
-<p class='itemintro'>{[postitemintro]}</p>
-<small class='small-date'>{[postitemdate]}</small>
-<!--Tags:{[PostItemTags]}-->
-<hr>
+<div class="postitem">
+    <a href="{[postitemlink]}">{[postitemtitle]}</a>
+    <small>{[postitemdate]}</small>
+</div>
 {(PostItemEnd)}
 {(NoItem)}
-<h3 style='color:#AAA;'>没有更多了呢</h3>
+<span style="color:rgb(87, 87, 87);">没有更多啦(′▽`〃)</span>
 {(NoItemEnd)}

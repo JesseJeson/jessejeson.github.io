@@ -1,14 +1,13 @@
 {(PostListTemplate)}
-<div class='posts'>
-  <h3 class='paneltitle'>Posts</h3>
-  <hr>{[postitems]}
-  {[morebtn]}</div><!--返回按钮：{[backbtn]}-->
-  {(PageType)}{[pagetype]}{(PageTypeEnd)}
-   {[backbtn]}
- {(PostListTemplateEnd)}
+<article class="posts">{[postitems]}</article>
+<div class='pag'>
+    {[backbtn]}{[morebtn]}
+</div>
+{(PageType)}{[pagetype]}{(PageTypeEnd)}
+{(PostListTemplateEnd)}
 {(MoreBtn)}
-<button class='pagebtn' onclick='B.more()'>More...</button>
+<a class='nextbtn' href="javascript:void(0);" onclick="B.more()">前空翻→</a>
 {(MoreBtnEnd)}
 {(BackBtn)}
-
+<a class='prevbtn' href="javascript:void(0);" onclick="B.turnback()">←后空翻</a>&nbsp;<span style="color:rgb(87, 87, 87);">|</span>&nbsp;
 {(BackBtnEnd)}

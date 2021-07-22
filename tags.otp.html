@@ -1,17 +1,19 @@
 {(Tags)}
-<div class='posts'>
-  <h3 class='paneltitle' id='tagtitle'>Tags</h3>
-  <hr>
-  <h2>{[tags]}</h2>
-  <hr></div>
-  {(PageType)}{[pagetype]}{(PageTypeEnd)}
+<article>
+    <h1 class="title">标签们</h1>
+    <div class="tagshow">{[tags]}</div>
+</article>
 {(TagsEnd)}
 {(TagItemTemplate)}
-[<a href='{[tagitemlink]}' class='itemlink'>{[tagitemtitle]}</a>]
+<span>[<a href='{[tagitemlink]}' class='itemlink'>{[tagitemtitle]}</a>]</span>
 {(TagItemTemplateEnd)}
 {(TagListTemplate)}
-<ul>{[taglist]}</ul>
+<small>标签:{[tagcurrent]}</small>
+<div class="taglist">{[taglist]}</div>
 {(TagListTemplateEnd)}
 {(TagListItemTemplate)}
-<li><a class='taglink' href='{[taglistitemlink]}'>{[taglistitemtitle]}</a></li><!--当前标签：{[tagcurrent]} 日期：{[taglistitemdate]}-->
+<div class="postitem">
+    <a href="{[taglistitemlink]}">{[taglistitemtitle]}</a>
+    <small>{[taglistitemdate]}</small>
+</div>
 {(TagListItemTemplateEnd)}
