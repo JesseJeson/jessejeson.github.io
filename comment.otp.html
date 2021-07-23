@@ -1,11 +1,15 @@
 <!--CommentID {[pid]}-->
 <!-- 在需要展示评论框处插入 -->
-<script src="https://utteranc.es/client.js"
-        repo="JesseJeson/histcatnote-comment"
-        issue-term="pathname"
-        theme="github-light"
-        crossorigin="anonymous"
-        async>
-</script>
+<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+<script>
+    new Valine({
+      el: '#vcomments',
+      appId: 'AofFxR0c20AhC2ylsAiVxHbr-MdYXbMMI',
+      appKey: 'cn4VBm5X31qPnmQmaV0e14oL',
+      placeholder: '来呀！评论呀！',
+      avatar: 'retro',
+      lang: 'zh-CN'
+    })
+  </script>
 <!--使用CB.const()在页面中调用评论框-->
 <script>try{CB.const()}catch{}</script>
